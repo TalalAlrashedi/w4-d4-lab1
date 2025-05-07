@@ -25,3 +25,15 @@ items.forEach((item) => {
   ul.appendChild(li);
 });
 
+let table = document.getElementsByClassName("table-container")[0];
+table.classList.add("custom-table");
+for (let i = 0; i < 2; i++) {
+    const row = document.createElement("tr");
+    for (let j = 0; j < 3; j++) {
+        const cell = document.createElement("td");
+        cell.textContent = `clee ${i + 1}-${j + 1}`;
+        row.appendChild(cell);
+    }
+    table.appendChild(row);
+}
+document.getElementById("table-container").appendChild(table);
