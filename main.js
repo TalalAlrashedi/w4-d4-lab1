@@ -6,6 +6,7 @@ let intro = document.getElementById("intro");
 
 intro.style.color = "white";
 intro.style.backgroundColor = "black";
+intro.style.fontStyle ="italic"
 
 let imageTag = document.getElementsByTagName("img")[0];
 imageTag.src =
@@ -15,11 +16,12 @@ let ul = document.querySelector("#class-list");
 
 let items = ["item1", "item2", "item3"];
 
-items.forEach(item => {
-    let li = document.createElement("li")
+items.forEach((item) => {
+  let li = document.createElement("li");
 
-    li.innerText = item
-    li.style.color = "green"
-    li.style.border = "1px black solid"
-    ul.appendChild(li)
-})
+  li.innerText = item;
+  li.style.color = "green";
+  li.style.border = "1px black solid";
+  ul.appendChild(li);
+});
+
